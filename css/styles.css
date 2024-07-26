@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+
+/* Estilos generales */
+
+.fuenteBrand {
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.imagenCarousel {
+    height: 400px;
+    object-fit: cover;
+    
+}
+
+.justificado {
+  text-align: justify;
+}
+
+.screenshotApple {
+  max-width: 300px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gridItem1 {
+  grid-row: span 4;
+}
+
+.espaciadoParrafo {
+  line-height: 1.8;
+}
+
+.gridItem2 {
+  grid-column: 2/4;
+}
+
+.gridItem3 {
+  grid-row: span 2;
+}
+
+/* Pagina de contacto */
+
+.text-area-consulta {
+  resize: none;
+}
+
+.mapaRolling {
+  border: 0;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.flexible {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 3rem;
+}
+
+.formularioResponsive {
+  width: 100%;
+}
+
+.paddingResponsive {
+  padding: 3rem;
+}
+
+/* Quienes somos */
+
+.containerImagen {
+  max-width: 1250px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+/* footer */
+
+.imagenFooter {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Media Queries Mobile y Tablet */
+
+@media screen and (max-width: 576px) {
+  .gridContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .gridItem1,
+  .gridItem2,
+  .gridItem3 {
+    text-align: center;
+  }
+
+  .footerCentrado {
+    text-align: start;
+  }
+
+  .contenedorOculto {
+    display: none;
+  }
+
+  .justificado {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .flexible {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0.75rem;
+  }
+
+  .contenedorOculto {
+    display: none;
+  }
+
+  .paddingResponsive {
+    padding: 1rem;
+  }
+
+  .justificado {
+    text-align: start;
+  }
+
+  .section1 {
+    margin: 10px 0px;
+    width: 100%;
+  }
+  .footerCentrado {
+    text-align: center;
+  }
+}
+
+/* MEdia queries dispositivos lg */
+
+@media screen and (min-width:992px) {
+    .imagenCarousel{
+        object-position:50% 25%;
+
+    }
+    
+    .imagenError {
+      width:50%!important;
+
+    }
+}
